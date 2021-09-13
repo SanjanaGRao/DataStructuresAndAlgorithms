@@ -24,10 +24,10 @@ public class BinarySearchWord
 	private static int binarySearch(String[] splitArray, String word, int length)
 	{
 		int l = 0;
-		int r = length - 1;
-        while (l <= r)
+		int searchTill = length - 1;
+        while (l <= searchTill)
         {
-            int m = l + (r - l) / 2;
+            int m = l + (searchTill - l) / 2;
             int pos = -1000;
             if(word == (splitArray[m]))
             {
@@ -43,7 +43,7 @@ public class BinarySearchWord
             }
             else
             {
-            	r = m - 1;
+            	searchTill = m - 1;
             }
         }
         return -1;
