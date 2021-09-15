@@ -17,7 +17,7 @@ public class BinarySearchWord
 	 * while loop is used and iterates until all the words are searched
 	 * @param pos is initially initialized to 1000 because if pos is already 0 then it will always return 0.
 	 * First, it checks if the word is present in the middle, then it @returns m value
-	 * If the @parm word is greater, it ignores the left half and searches right half
+	 * If the @param word is greater, it ignores the left half and searches right half
 	 * If the @param word is smaller, it ignores the right half
 	 * 
 	 */
@@ -28,16 +28,12 @@ public class BinarySearchWord
         while (l <= searchTill)
         {
             int m = l + (searchTill - l) / 2;
-            int pos = -1000;
-            if(word == (splitArray[m]))
-            {
-            	pos = 0;
-            }
+            int pos = word.compareTo(splitArray[m]);
             if(pos == 0)
             {
             	return m;
             }
-            if(word > (splitArray[m]))
+            if(pos > 0)
             {
             	 l = m + 1;
             }
