@@ -6,7 +6,7 @@ import java.util.Scanner;
 /*
  * The class InsertionSort sorts the list of strings
  * @author Sanjana Rao
- * @since 13-09-2021
+ * @since 15-09-2021
  */
 public class InsertionSort {
 
