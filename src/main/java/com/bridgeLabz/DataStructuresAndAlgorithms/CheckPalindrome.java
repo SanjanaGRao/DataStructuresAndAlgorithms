@@ -1,7 +1,11 @@
 package com.bridgeLabz.DataStructuresAndAlgorithms;
 
 import java.util.Scanner;
-
+/**
+ * To check if a string is palindrome or not
+ * @author Sanjana Rao
+ * @since 15-09-2021
+ */
 public class CheckPalindrome 
 {
 	 public static void main(String[] args) 
